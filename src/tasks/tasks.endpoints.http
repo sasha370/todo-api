@@ -1,2 +1,22 @@
+## Task Manager API
+
 GET http://127.0.0.1:3200/tasks
 Content-Type: application/json
+
+POST http://127.0.0.1:3200/tasks
+Content-Type: application/json
+{
+  "title": "Task 22",
+  "date": "2019-01-01",
+  "priority": "normal",
+  "status": "todo",
+  "description": "Task 1 description"
+}
+
+
+PUT http://127.0.0.1:3200/tasks
+Content-Type: application/json
+{
+  "id": "bd8e6c2d-2ccb-414c-b85e-971ee9bbfeb1",
+  "status": "inProgress"
+}
